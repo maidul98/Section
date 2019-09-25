@@ -1,0 +1,1432 @@
+/*Gloable*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.outerConatiner{
+  max-width: 956px;
+  margin: 0 auto;;
+}
+
+
+body{
+  background: white;
+  font-size: 16px;
+  color: #444444
+}
+
+.afterEachBull{
+  margin-bottom: 70px;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float:right;
+}
+
+.marginZero{
+  margin: 0px !important;
+}
+
+/*grade color*/
+.exemplaryColor{
+  background: #3D8AF7 !important;
+  color: white;
+}
+
+.accomplishedColor{
+  background: #72BB53 !important;
+  color: white;
+}
+
+.competentColor{
+  background: #FF6624 !important;
+  color: white;
+}
+
+.nomasColor{
+  background: #B70F0A !important;
+  color: white;
+}
+
+
+/*Nav*/
+
+.nav {
+    background: #1E8BC3;
+    position: relative;
+    height: 66px;
+}
+
+.navbar{
+  float: left;
+  padding-left: 0px;
+}
+
+.userPic{
+  float: right;
+}
+.userPic img{
+max-width: 100%;
+border-radius: 100%;
+background: white;
+height: 42px;
+width: auto;
+position: relative;
+top: 12px;
+}
+
+.clearBoth{
+  clear: both;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+
+.navbar li{
+  float: left;
+  list-style: none;
+  margin-right: 0x;
+  font-size: 20px;
+  color: #F7F6F6;
+  background: #f5f5f5;
+  color: #444444 !important;
+  padding: 22px;
+  position: relative;
+}
+
+.navbar li span{
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.navbar{
+  margin: 0;
+}
+
+.navbar li:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 36px solid transparent;
+    border-bottom: 36px solid transparent;
+    border-left: 30px solid hsl(0, 0%, 96%);
+    position: absolute;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 2;
+    top: 70%;
+}
+
+.navbar li:last-child:after {
+    border-left: 30px solid transparent;
+
+}
+
+.navbar li:last-child{
+    background: transparent;
+    color: white !important;
+}
+
+.navbar li:before {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 36px solid transparent;           /* Go big on the size, and let overflow hide */
+  border-bottom: 36px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 70%;
+  margin-top: -50px;
+  margin-left: 3px;
+  left: 0;
+  z-index: 1;
+}
+
+.navbar li:first-child:before {
+  border-left: 30px solid transparent;
+}
+
+
+.activeNav {
+    background: #f5f5f5;
+    color: #444444 !important;
+    padding: 22px;
+}
+
+/*link*/
+
+a:link{
+  text-decoration: none;
+}
+
+a{
+  color: #00A4D3;
+}
+
+/*content*/
+.bodyContainer{
+  /*padding:0 40px 0 0;*/
+}
+
+.sectionTitle{
+  margin-top: 45px;
+  font-size: 140%;
+  font-weight: 500;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.row{
+  width: 100%;
+}
+
+/*learningTarget*/
+.learningTarget {
+    background: #f8f8f8;
+    padding: 20px;
+    width: calc(20% - 10px);
+    float: left;
+    margin-right: 10px;
+    color: #586973;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.learningTargetName {
+    width: 80%;
+    float: left;
+    background: #9f9f9f;
+    padding: 20px;
+    color: white;
+    text-align: left;
+}
+
+.studentRubric.des {
+    background: #f8f8f8;
+    padding: 10px;
+}
+
+span.moreInfoTitle.text-rubric.text-color {
+    padding-left: 10px;
+}
+
+/*moreInfo*/
+.textAndFontForMoreInfo{
+  background: #606060;
+  padding: 20px;
+  color: white;
+}
+
+.dueDate{
+  width: calc(35% - 10px);
+  margin-right: 10px;
+  position: relative;
+}
+
+.untilDue {
+    padding: 11px;
+    background: #858585;
+    position: absolute;
+    top: 28px;
+    right: 0;
+    text-align: center;
+    color: white;
+}
+
+.grade{
+  width: 75%;
+  transition: all 2s;
+}
+
+.overGradeBar {
+    background-size: 35px 35px;
+    background-color: #EcEcEc;
+    background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+    background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+    height: auto;
+}
+
+.currentGrade{
+  width: calc(65% - 10px);
+  margin-right: 10px;
+}
+
+
+.moreInfoTitle{
+  margin-bottom: 10px;
+  display: block;
+}
+
+/*user drop down*/
+
+.userPic{
+  position: relative;
+  /*margin-right: 40px;*/
+}
+
+.userDropDown {
+    position: absolute;
+    margin-top: 20px;
+    background: #1E8BC3;
+    box-shadow: 0px 4px 10px #1E8BC3;
+    z-index: 1000;
+    right: 0px;
+}
+
+.userDropDown ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.userDropDown ul li{
+  padding: 10px;
+  width: 150px;
+}
+
+a:active{
+  color: #444444;
+}
+
+.userDropDown a:visited{
+  color: black;
+}
+
+.userDropDown a:hover{
+  color: #444444;
+}
+
+.userDropDown ul li:hover{
+  background: #f5f5f5;
+}
+
+/*student login*/
+
+.loginForm{
+  width: 417px;
+  margin: 0 auto;
+  background: #1E8BC3;
+  color: white;
+  text-align: left;
+  padding: 40px 0 40px;
+}
+
+.logoImg{
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.nav-logo img {
+    width: 80px;
+    position: absolute;
+    top: 23%;
+}
+
+.innerFrom{
+  width: 76%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.loginForm input[type="email"]{
+  padding: 13px;
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  border:white solid 1px;
+}
+
+.loginForm input[type="password"]{
+  padding: 13px;
+  border: none;
+  display: block;
+  width: 100%;
+  border:white solid 1px;
+}
+
+.loginSubmit{
+  padding: 13px;
+  margin-top: 10px;
+  width: 40%;
+  display: block;
+  background: #0069a0;
+  border: none;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.loginForm ul li{
+  display: inline;
+  margin-right: 5px;
+  color: white;
+}
+
+.loginForm ul{
+  padding: 0px;
+  margin: 0px;
+}
+
+/*centering login box*/
+.bodyContainer {
+  position: relative;
+  margin-top: 45px;
+}
+
+.loginForm {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+html, body, .bodyContainer{
+  height: 100%;
+}
+
+.text-color{
+  color: #646464 !important;
+}
+
+body#login{
+  /*background-image: url('../img/bg-login.jpg');*/
+  background-size: cover;
+  background-position: left center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../img/bg-login.jpg');}
+
+/*password meter*/
+
+.passWordMeter{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.passWordMeter #password{
+  width: 70%;
+  float: left;
+}
+
+.passWordMeter .passMeter {
+    width: 30%;
+    float: left;
+    padding: 13px;
+    background: #FF5D55;
+    border: solid 1px #FF5D55;
+}
+
+#regesterStudnet{
+  /*background-image: url('../img/bg-login.jpg');*/
+  background-size: cover;
+  background-position: left center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../img/bg-login.jpg');
+  }
+
+  /*teacher classes*/
+
+  .manage ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .manage ul li{
+    float: left;
+    margin-left: 10px;
+    width: 200px;
+  }
+
+  .manage ul li:first-child{
+    margin-left: 0;
+  }
+
+  .manage-section{
+    background-color: #34495e !important;
+  }
+
+ .tableHead .col{
+  width: 50%;
+  padding: 10px;
+}
+
+ .tableHead .addClass{
+   text-align: center;
+   padding: 12px;
+   background: #629C44;
+   width: 25%;
+   float: right;
+   color: white;
+}
+
+tr:hover {
+    background: rgba(80, 204, 237, 0.17);
+}
+
+.editSectionName{
+  font-size: 120%;
+  margin: 0px;
+  background: #EBEBEB;
+  border: 1px solid #EBEBEB;
+  color: #444444;
+  padding-left: 3px;
+  padding-right: 23px;
+  outline: none;
+ }
+
+ .editSectionName:hover{
+border:1px solid #F7F6F6;
+border-radius: 2px;
+background-image: url('../img/edit.png');
+background-repeat: no-repeat;
+background-size: 14px 14px;
+background-position: 98% 50%;
+ }
+
+ #section-edit{
+   background-image: url('../img/savingRubric.gif');
+   background-repeat: no-repeat;
+   background-size: 14px 14px;
+   background-position: 98% 50%;
+ }
+
+
+
+  .tableHead{
+    background: #EBEBEB;
+    margin-top: 45px;
+  }
+
+  .tableHead:hover{
+    background: #EBEBEB;
+  }
+
+  .tableHead td p{
+    font-weight: bold;
+  }
+
+  #teacher-classes{
+    background: white;
+  }
+
+.tableHead .col.addClassesRow{
+  padding: 0px;
+}
+
+.tableBody .class{
+  padding: 10px;
+  border-bottom: 1px solid #E2E2E2;
+  border-left: 1px solid #E2E2E2;
+  border-right: 1px solid #E2E2E2;
+}
+
+
+.tableBody .class p{
+    margin: 0px;
+    padding: 0 17px 0 17px;
+}
+
+.textFieldAddCLass{
+  border: none;
+  font-size: 16px;
+}
+
+/*View Section */
+#view-section.bodyContainer{
+  width: 700px;
+  margin: 0 auto;
+}
+
+#view-section .sectionName{
+  padding: 10px;
+  border-bottom: 1px solid #E2E2E2;
+  border-left: 1px solid #E2E2E2;
+  border-right: 1px solid #E2E2E2;
+}
+
+#view-section .sectionName p{
+    margin: 0px;
+    padding: 0 17px 0 17px;
+}
+
+.textFieldAddCLass{
+  border: none;
+  font-size: 16px;
+}
+
+.floatLeft{
+  float: left;
+}
+
+.columTitle{
+  width: 25%;
+  padding: 10px;
+  border-bottom: 1px solid #E2E2E2;
+  border-left:  1px solid #E2E2E2;
+}
+
+.sectionName{
+  width: 75%;
+}
+
+.section{
+  margin-bottom: 45px;
+}
+
+/*register code*/
+
+.loginForm input[type="text"] {
+    padding: 13px;
+    border: none;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+}
+
+/*rubric studnet*/
+
+.rubricBox {
+    width: calc(25% - 5px);
+    margin-right: 5px;
+}
+
+.studentRubric{
+  margin-top: 40px;
+}
+
+.rubricBox .gradeTitle{
+  padding: 5px;
+}
+
+.rubricBg{
+  padding: 5px;
+  padding-bottom: 20px;
+}
+
+.col{
+  float: left;
+}
+
+
+
+
+/*Register Javascript classes*/
+
+.addRedBorder{
+  border: red solid 1px !important;
+}
+
+.weakPassword{
+  background: #EADA26 !important;
+  border: solid 1px #EADA26 !important;
+}
+
+.strongPassword{
+  background: #FF5D55 !important;
+  border: solid 1px #FF5D55 !important;
+}
+
+/*Rubric descritpion*/
+
+.enterRubricDescription{
+  width: 100%;
+  border: 1px solid #EBEBEB;
+  height: 100px;
+  resize: none;
+  padding: 6px;
+  font-size: 12px;
+}
+
+
+/* scrole bar */
+.enterRubricDescription::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Handle */
+.enterRubricDescription::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+/* scrole bar */
+#section-des::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Handle */
+#section-des::-webkit-scrollbar-thumb {
+    background: #E2E2E2;
+}
+
+/*save rubric*/
+
+.editRubric{
+  position: relative;
+}
+
+.noMassaveRubricPic{
+  position: absolute;
+  bottom: -18px;
+  right: 0;
+}
+
+.compsaveRubricPic{
+  position: absolute;
+  bottom: 2px;
+  right: 290px;
+}
+
+.accosaveRubricPic{
+  position: absolute;
+  bottom: 2px;
+  left: 417px;
+}
+
+.exemsaveRubricPic{
+  position: absolute;
+  bottom: 2px;
+  left: 193px;
+}
+
+/*Burger Nav*/
+
+.buger-icon{
+  font-size: 240%;
+  color: white;
+  position: absolute;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+
+/*burger javascript classes*/
+
+.makeSpaceForSideBar{
+  width: 75% !important;
+  transition: all 2s;
+  margin-right: 40px;
+}
+
+.navInnerContainer{
+  max-width: 950px;
+  margin: 0 auto;;
+}
+
+/*widths*/
+
+.basicTable{
+  width: 100%;
+}
+
+.basicTable tr{
+  width: 50%;
+}
+
+.basicTable td{
+  padding: 10px;
+}
+
+.basicTable td p{
+  margin: 0px;
+}
+
+.basicTable, th, td {
+    border: 1px solid #E2E2E2;
+    border-collapse: collapse;
+
+}
+
+.searchBar{
+  margin: 0;
+}
+
+.searchBar input[type="search"]{
+  padding: 10px;
+  border: 1px solid  #E2E2E2;
+}
+
+.grade-input{
+    text-align: left;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.student-name {
+    text-align: center;
+    margin: 45px 0;
+}
+
+ul#errors-list li{
+  display: block !important;
+  color: white !important;
+  list-style: none !important;
+}
+
+ul#errors-list{
+
+  background: #CF000F;
+  margin: 10px 0 10px;
+  padding: 10px;
+}
+
+ul#success-list li{
+  display: block !important;
+  color: black !important;
+  list-style: none !important;
+}
+
+ul#success-list{
+
+  background: white;
+  margin: 10px 0 10px;
+  padding: 10px;
+}
+
+.pull-left{
+  float: right;
+}
+
+.type-user .loginSubmit{
+  width: calc(50% - 10px);
+  margin-right: 10px;
+  float: left;
+}
+
+/*warning notices*/
+.info-warning{
+  padding: 15px;
+  background: #3D8EB9;
+  background-image: url('https://api.icons8.com/download/720627141e27846a6ac97c1bd3ece888f0ed5bfe/iOS7/PNG/256/Very_Basic/info-256.png');
+  background-repeat: no-repeat;
+  background-size: 23px 23px;
+  background-position: 1% 50%;
+}
+
+.info-warning p{
+  padding: 0;
+  margin: 0;
+  color: #24556f;
+  margin-left: 25px;
+}
+
+/*buttons*/
+.create-class {
+    background: #0069a0;
+    border: none;
+    padding: 10px;
+    color: white;
+    margin-top: 15px;
+}
+
+/*create class edit name*/
+
+.editSectionName.make_class{
+  width: 100%;
+  padding: 10px 10px;
+}
+
+.make_class.editSectionName{
+  width: 100%;
+  padding: 10px 10px;
+  background-position: 98% 50%;
+}
+
+.soft-warning p {
+    padding: 0;
+    margin: 0;
+    color: #650108;
+    margin-left: 25px;
+}
+
+.soft-warning {
+    padding: 15px;
+    background: #CF000F;
+    /*margin-top: 45px;*/
+    background-image: url('https://api.icons8.com/download/720627141e27846a6ac97c1bd3ece888f0ed5bfe/iOS7/PNG/256/Very_Basic/info-256.png');
+    background-repeat: no-repeat;
+    background-size: 23px 23px;
+    background-position: 1% 50%;
+}
+
+.class-title{
+  text-align: center;
+  margin: 60px 0;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+
+.class-over-view .col{
+  float: right;
+}
+
+.col.class_code{
+  float: left !important;
+  clear: left;
+}
+
+.class_code p{
+  line-height: 50px;
+}
+
+#class-code-number{
+  background: #c0c0c0;
+  color: #757575;
+  padding: 4px;
+  border-radius: 3px;
+  background-image: url(../img/copy.png);
+  background-size: 15px 15px;
+  background-position: 93% 50%;
+  background-repeat: no-repeat;
+  padding-right: 25px;
+}
+
+.class-code{
+  margin: 20px 0;
+}
+
+.manage-class-butt{
+  width: 100%;
+  padding: 10px;
+  display: block;
+  background: #4C7A34;
+  border: none;
+  color: white;
+  background-image: url('../img/gear.png');
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: 4% 50%;
+  margin: 0;
+}
+
+/*sections*/
+.section{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 45px;
+  border: solid 1px #EBEBEB;
+}
+
+.section .header .title-of-class{
+  float: left;
+}
+
+.section .header .num-sections-in-class{
+  float: right;
+}
+
+.section .header p{
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+}
+
+.section .header{
+  background: #EBEBEB;
+}
+
+.section .section-list{
+  margin-top: 25px;
+}
+
+.section .section-list p{
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border-left: solid 1px #5f5f5f;
+  border-bottom: solid 1px white;
+  border-top: solid 1px white;
+  border-right: solid 1px white;
+}
+
+.hover-class-name{
+  border: solid 1px #5f5f5f !important;
+}
+
+.section button {
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*create section*/
+#create-learning-target{
+  background: white;
+  border: none;
+  width: 100%;
+  padding-right: 0px;
+}
+
+#section-due-date{
+  color: #a3a3a3;
+  background: white;
+  border: none;
+}
+
+#section-des{
+  background: white;
+  border: none;
+  height: 50px;
+  width: 100%;
+  font-size: 12px;
+}
+
+
+.enterRubricDescription.editSectionName{
+  background-image: none;
+}
+
+textarea[name=section_description] {
+    resize: none;
+}
+
+/*SECTION TABS*/
+#section-tabs{
+  margin-top: 45px;
+  position: relative;
+}
+
+#section-tabs section{
+  border:1px solid #E2E2E2;
+}
+
+
+#section-tabs .content{
+    padding: 15px;
+}
+
+
+/*icons for section*/
+header.open-section:after {
+    content: "";
+    width: 23px;
+    height: 23px;
+    background: url('../img/open-section.png');
+    right: -54%;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    background-size: 23px;
+    top: 6px;
+}
+
+header.close-section:after {
+  content: "";
+  width: 23px;
+  height: 23px;
+  background: url('../img/close-section.png');
+  right: -54%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  background-size: 23px;
+  top: 6px;
+}
+
+#section-tabs section  header .editSectionName{
+  background: none;
+  border: none;
+  padding: 15px;
+  display: inline-block;
+  width: 40%;
+}
+
+#section-tabs .basicTable {
+    margin-top: 25px;
+}
+
+#section-tabs .rubricBox {
+    width: calc(25% - 5px);
+    margin-right: 5px;
+}
+
+#section-tabs .rubricBg{
+  padding: 0px;
+}
+
+.content{
+  display: none;
+}
+
+.section-tab-active{
+  background: #EBEBEB;
+}
+
+.edit-section-name {
+    background-image: url('../img/edit.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: 14px 14px !important;
+    background-position: 98% 50% !important;
+}
+
+#section-tabs section  header .editSectionName:hover{
+  cursor:grab;
+}
+
+#section-tabs:last-child {
+  border-top: none !important;
+}
+
+/*SAVE*/
+
+.save{
+  width: 10%;
+  line-height: 0px;
+  float: right;
+  margin-right: 5px;
+}
+
+.create-new{
+  width: 10%;
+  line-height: 0px;
+  margin: 0 auto;
+  margin-top: 45px;
+  float: right;
+}
+
+.saved-success{
+  padding: 15px;
+  color: #4C7A34;
+  font-size: 12px;
+  display: none;
+  float: right;
+  line-height: 3px;
+}
+
+
+.saved-success:after{
+      content: '';
+      display: inline-block;
+      width: 5px;
+      height: 10px;
+      border: solid #6e935b;
+      border-width: 0 1px 1px 0;
+      transform: rotate(45deg);
+      margin-left: 5px;
+      margin-bottom: 1px;
+}
+
+.create_page.editSectionName{
+  margin-top: 45px;
+  background: none;
+  display: block;
+  padding: 12px;
+  width: 100%;
+}
+
+#section-tabs section{
+    border-bottom: none;
+}
+
+#section-tabs section:only-child {
+    border: 1px solid #E2E2E2;
+}
+
+#section-tabs section:last-of-type {
+    border-bottom: 1px solid #E2E2E2 !important;
+}
+
+.grade-option-mastery-style{
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
+.missing{
+  background: white;
+}
+
+#enter-grade label{
+  margin-right: 20px;
+  cursor: grab;
+}
+
+#enter-grade input{
+  vertical-align: middle;
+}
+
+
+.delete{
+  background: #CF000F;
+  float: right;
+  width: 10%;
+  line-height: 0px;
+  margin-right: 5px;
+}
+
+.new-section{
+  margin-top: 0px;
+}
+
+.addClassButton{
+    background: #0069a0;
+    border: none;
+    padding: 10px;
+    color: white;
+    background-image: url('../img/add.png');
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: 10% 50%;
+    display: inline-block;
+    float: right;
+    padding-left: 25px;
+}
+
+.basicTable.classesList{
+  margin-top: 15px !important;
+}
+
+.basicTable.student-classes{
+  margin-top: 45px !important;
+}
+
+.enter-class-details{
+  display: none;
+}
+
+.user-name {
+    position: absolute;
+    right: 130%;
+    line-height: 66px;
+    color: white;
+    font-style: italic;
+    white-space: nowrap;
+    font-size: 14px;
+}
+/**FOOTER***/
+footer{
+  padding: 40px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.strength_meter{
+position: absolute;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 43px;
+z-index:-1;
+border-radius:5px;
+padding-right:13px;
+}
+.button_strength {
+text-decoration: none;
+color: #FFF;
+font-size: 13px;
+}
+.strength_meter div{
+    width:0%;
+height: 43px;
+text-align: right;
+color: #000;
+line-height: 43px;
+-webkit-transition: all .3s ease-in-out;
+-moz-transition: all .3s ease-in-out;
+-o-transition: all .3s ease-in-out;
+-ms-transition: all .3s ease-in-out;
+transition: all .3s ease-in-out;
+padding-right: 12px;
+border-radius:5px;
+}
+.strength_meter div p{
+position: absolute;
+top: 22px;
+right: 0px;
+color: #FFF;
+font-size:13px;
+}
+
+.veryweak{
+    background-color: #FFA0A0;
+border-color: #F04040!important;
+width:25%!important;
+}
+.weak{
+background-color: #FFB78C;
+border-color: #FF853C!important;
+width:50%!important;
+}
+.medium{
+background-color: #FFEC8B;
+border-color: #FC0!important;
+width:75%!important;
+}
+.strong{
+background-color: #C3FF88;
+border-color: #8DFF1C!important;
+width:100%!important;
+}
+
+/*SETTINGS*/
+
+.setting{
+  padding: 10px;
+  width: 40%;
+}
+
+.setting-save{
+  padding: 10px;
+  background: #0069a0;
+  border: #0069a0 solid;
+  color: white;
+}
+
+.remove-class-link{
+  color: #0069a0;
+  float: right;
+}
+
+/*WHAT YOU SEE iS WHAT YOU GET*/
+.mce-panel {
+    border: 0 solid #efefef !important;
+    background-color: #f0f0f0;
+}
+
+.mce-branding-powered-by {
+    display: none;
+}
+
+/*student-section-details*/
+
+.lt-grade-box{
+  width: 50%;
+}
+
+.col-2{
+  width: 50%;
+  float: left;
+}
+
+.feedback {
+  /*width: 100%;
+  height: 100%;*/
+}
+
+/*.learning-target-header {
+  background: url(../img/target.png);
+  background-size: 36px;
+  padding-left: 50px;
+  background-repeat: no-repeat;
+}*/
+
+.feedback-header {
+  background: url(../img/text-document.png);
+  background-size: 36px;
+  padding-left: 50px;
+  background-repeat: no-repeat;
+  padding-bottom: 1px;
+}
+
+.learning-target-header::after{
+  background-image: : url('../img/target.png');
+  content: "";
+  background-repeat: no-repeat;
+
+
+}
+
+.grades-tl{
+  padding-right: 40px;
+}
+
+.grades-tl .inner, .feedback .inner, .studentRubric.student{
+padding: 15px;
+min-height: 300px;
+-webkit-box-shadow: 0px 0px 14px 0px rgba(133,133,133,1);
+-moz-box-shadow: 0px 0px 14px 0px rgba(133,133,133,1);
+box-shadow: 0px 0px 14px 0px rgba(133,133,133,1);
+}
+
+.description{
+  margin-top: 30px;
+}
+
+.feedback-box{
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+/*.grades-tl {
+  position: relative;
+}*/
+.vertically-center {
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  font-size: 40px;*/
+  text-align: center;
+  margin-top: 20px;
+}
+
+.due-date {
+    padding: 65px 0 65px;
+    font-size: 35px;
+}
+
+.garde {
+    padding: 65px 0 65px;
+    font-size: 35px;
+}
+
+.small-text{
+  font-size: 20px !important;
+}
+
+.over-view, .description{
+  margin-bottom: 30px;
+}
+
+hr {
+border: 0;
+height: 0;
+border-top: 1px solid rgba(0, 0, 0, 0.1);
+border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+hr.icon-seporater{
+  background: url(../img/target.png);
+  background-size: 36px;
+  padding-left: 50px;
+  background-repeat: no-repeat;
+}
+
+.due-date{
+  border-right: 1px solid rgba(0, 0, 0, 0.1);;
+}
